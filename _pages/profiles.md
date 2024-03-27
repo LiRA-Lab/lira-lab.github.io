@@ -1,28 +1,64 @@
 ---
 layout: profiles
-permalink: /people/
-title: people
-description: members of the lab or group
+permalink: /team/
+title: Team
+description:
 nav: true
 nav_order: 7
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
-  - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
-  - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
-    more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+- group: "Group Leader"
+  align: left
+  image: sarp_prof_pic.jpg
+  name: "Arda Sarp Yenicesu"
+  bio: "Sarp, originally from Ankara, Turkey, graduated from Bilkent University with a degree in Electrical and Electronic Engineering. His research interests lie in applying Causal ML to Robotics, particularly focusing on Causal Reinforcement Learning and exploring applications in Task and Motion Planning (TAMP) and personal decision-making."
+  email: "sarp@example.com"
+  website: "https://asyncs.github.io/"
+  linkedin: "sarp-linkedin"
+  twitter: "sarp-twitter"
+  scholar_userid: "123456789"
+- group: "Post-Doc Researchers"
+  align: left
+  image: sarp_prof_pic.jpg
+  name: "Arda Sarp Yenicesu"
+  bio: "Sarp, originally from Ankara, Turkey, graduated from Bilkent University with a degree in Electrical and Electronic Engineering. His research interests lie in applying Causal ML to Robotics, particularly focusing on Causal Reinforcement Learning and exploring applications in Task and Motion Planning (TAMP) and personal decision-making."
+  email: "sarp@example.com"
+  website: "https://asyncs.github.io/"
+  linkedin: "sarp-linkedin"
+  twitter: "sarp-twitter"
+  scholar_userid: "123456789"
+- group: "PhD Students"
+  align: left
+  image: sarp_prof_pic.jpg
+  name: "Arda Sarp Yenicesu"
+  bio: "Sarp, originally from Ankara, Turkey, graduated from Bilkent University with a degree in Electrical and Electronic Engineering. His research interests lie in applying Causal ML to Robotics, particularly focusing on Causal Reinforcement Learning and exploring applications in Task and Motion Planning (TAMP) and personal decision-making."
+  email: "sarp@example.com"
+  website: "https://asyncs.github.io/"
+  linkedin: "sarp-linkedin"
+  twitter: "sarp-twitter"
+  scholar_userid: "123456789"
+- group: "MSc Students"
+  align: left
+  image: sarp_prof_pic.jpg
+  name: "Arda Sarp Yenicesu"
+  bio: "Sarp, originally from Ankara, Turkey, graduated from Bilkent University with a degree in Electrical and Electronic Engineering. His research interests lie in applying Causal ML to Robotics, particularly focusing on Causal Reinforcement Learning and exploring applications in Task and Motion Planning (TAMP) and personal decision-making."
+  email: "sarp@example.com"
+  website: "https://asyncs.github.io/"
+  linkedin: "sarp-linkedin"
+  twitter: "sarp-twitter"
+  scholar_userid: "123456789"
+- group: "MSc Students"
+  align: left
+  image: sarp_prof_pic.jpg
+  name: "Arda Sarp Yenicesu"
+  bio: "Sarp, originally from Ankara, Turkey, graduated from Bilkent University with a degree in Electrical and Electronic Engineering. His research interests lie in applying Causal ML to Robotics, particularly focusing on Causal Reinforcement Learning and exploring applications in Task and Motion Planning (TAMP) and personal decision-making."
+  email: "sarp@example.com"
+  website: "https://asyncs.github.io/"
+  linkedin: "sarp-linkedin"
+  twitter: "sarp-twitter"
+  scholar_userid: "123456789"
+
+# Add profiles for other groups here
 ---
