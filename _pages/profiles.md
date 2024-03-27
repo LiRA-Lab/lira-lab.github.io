@@ -44,11 +44,11 @@ profiles:
   image: sarp_prof_pic.jpg
   name: "Arda Sarp Yenicesu"
   bio: "Sarp, originally from Ankara, Turkey, graduated from Bilkent University with a degree in Electrical and Electronic Engineering. His research interests lie in applying Causal ML to Robotics, particularly focusing on Causal Reinforcement Learning and exploring applications in Task and Motion Planning (TAMP) and personal decision-making."
-  email: "sarp@example.com"
+  email: "sarp.yenicesu@bilkent.edu.tr"
   website: "https://asyncs.github.io/"
-  linkedin: "sarp-linkedin"
-  twitter: "sarp-twitter"
-  scholar_userid: "123456789"
+  linkedin: "arda-sarp-yenicesu"
+  twitter: "ASYenicesu"
+  scholar_userid: "MjKlcQwAAAAJ"
 - group: "MSc Students"
   align: left
   image: sarp_prof_pic.jpg
