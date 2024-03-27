@@ -21,7 +21,7 @@ profiles:
   scholar_userid: "MjKlcQwAAAAJ"
 - group: "MSc Students"
   align: left
-  image: kutay_prof_pic.jpg
+  image: kutay_prof_pic.png
   name: "Kutay Demiray"
   bio: "Kutay graduated from the Computer Engineering department at Bilkent University. His current research interests include reinforcement learning (particularly exploration and multi-agent RL in robotics and similar embodied agent settings), and machine learning and AI in general."
   email: "kutay.demiray@bilkent.edu.tr"

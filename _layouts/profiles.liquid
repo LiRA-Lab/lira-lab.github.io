@@ -12,23 +12,14 @@ layout: page
           <h2>{{ group }}</h2>
           {% for profile in group_profiles %}
             <hr>
-            <div style="display: flex; align-items: center; gap: 20px;"> <!-- Flex container for profile -->
-              
-              <!-- Profile Image -->
+            <div style="display: flex; align-items: center; gap: 20px;">
               {% if profile.image %}
-                <div class="profile-image" style="flex-shrink: 0;">
-                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-                  {% if profile.image_circular %}
-                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-                  {% else %}
-                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-                  {% endif %}
-                  {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+                <div class="profile-image" style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden;">
+                  <!-- Update the path construction here -->
+                  <img src="{{ '/assets/img/' | append: profile.image }}" class="{{ profile.image_circular | bool: 'img-fluid z-depth-1 rounded-circle', 'img-fluid z-depth-1 rounded' }}" alt="{{ profile.name }}" style="width: 100%; height: auto; max-width: 150px; max-height: 150px; object-fit: cover;">
                 </div>
               {% endif %}
               
-              <!-- Profile Info and Contact -->
               <div class="profile-info" style="flex-grow: 1;">
                 {% if profile.name %}
                   <h3>{{ profile.name }}</h3>
@@ -52,7 +43,6 @@ layout: page
                   {% if profile.scholar_userid %}
                     <a href="https://scholar.google.com/citations?user={{ profile.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
                   {% endif %}
-                  <!-- Add more contact information fields as needed -->
                 </div>
               </div>
             </div>
