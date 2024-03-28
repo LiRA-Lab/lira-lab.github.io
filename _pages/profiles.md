@@ -26,6 +26,36 @@ profiles:
   bio: "Kutay graduated from the Computer Engineering department at Bilkent University. His current research interests include reinforcement learning (particularly exploration and multi-agent RL in robotics and similar embodied agent settings), and machine learning and AI in general."
   email: "kutay.demiray@bilkent.edu.tr"
   linkedin: "kutay-demiray-ba462518b"
+- group: "MSc Students"
+  align: left
+  image: dilruba_prof_pic.jpg
+  name: "Dilruba Sultan Haliloglu"
+  email: "sultan.haliloglu@bilkent.edu.tr"
+  linkedin: "dilruba-sultan-haliloglu"
+  scholar_userid: "7a0txuoAAAAJ"
+- group: "MSc Students"
+  align: left
+  image: ecekun_profile_pic.jpeg
+  name: "Ece Kunduracioglu"
+  bio: "Ece graduated as valedictorian from the Department of Computer Engineering at Hacettepe University. Her current research interests include tool manipulation for robotic agents, particularly focusing on tool usage with keypoint representations through point clouds, and deep reinforcement learning."
+  email: "e.kunduracioglu@bilkent.edu.tr"
+  linkedin: "ecekunduracioglu"
+- group: "MSc Students"
+  align: left
+  image: gunef_prof_pic.jpg
+  name: "Günef Şenay Bozkurt"
+  bio: " Günef earned her Bachelor's degree in Electrical and Electronics Engineering from Bilkent University. Currently, she is a full-time Master's student in Computer Science at Bilkent University, with a research focus on the applications of reinforcement learning in robotic agents."
+  email: "senay.bozkurt@bilkent.edu.tr"
+  linkedin: "g%C3%BCnef-bozkurt-438a5b19a"
+- group: "MSc Students"
+  align: left
+  image: berk_prof_pic.png
+  name: "Berk Çiçek"
+  bio: "Berk, graduated from Bilkent University with a degree in Mechanical Engineering. His research interests lie in Robot Learning, particularly focusing on Manipulation Planning and  Task and Motion Planning (TAMP)"
+  email: "berk.cicek@bilkent.edu.tr"
+  website: "https://berk-cicek.github.io/"
+  linkedin: "berkcicek8"
+  scholar_userid: "S03JmUcAAAAJ"
 
 # Add profiles for other groups here
 ---
