@@ -11,7 +11,7 @@ profiles:
   # and create one content file for each profile inside _pages/
 - group: "PhD Students"
   align: left
-  image: sarp_prof_pic.jpg
+  image: .jpg
   name: "Kaan Ünlü"
   bio: "Master of Game Design and Bachelor of Compute Science through Aalto and Bilkent Universities. Research interests lie in Environmental Storytelling through mechanics, Teamed adversarial RL in stage based challenges and High Efficiency non-repeating procedural shaders . I also do longsword HEMA and foil fencing."
   email: "kaan.unlu@bilkent.edu.tr" 
