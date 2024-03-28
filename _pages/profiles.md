@@ -9,6 +9,14 @@ nav_order: 7
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
+- group: "PhD Students"
+  align: left
+  image: sarp_prof_pic.jpg
+  name: "Kaan Ünlü"
+  bio: "Master of Game Design and Bachelor of Compute Science through Aalto and Bilkent Universities. Research interests lie in Environmental Storytelling through mechanics, Teamed adversarial RL in stage based challenges and High Efficiency non-repeating procedural shaders . I also do longsword HEMA and foil fencing."
+  email: "kaan.unlu@bilkent.edu.tr" 
+  website: "https://ukaanunlu.wixsite.com/portfolio" 
+  linkedin: "kaan-ünlü-37712a134"
 - group: "MSc Students"
   align: left
   image: sarp_prof_pic.jpg
