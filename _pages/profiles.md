@@ -60,7 +60,7 @@ profiles:
   align: left
   image: berk_prof_pic.png
   name: "Berk Çiçek"
-  bio: "Berk, graduated from Bilkent University with a degree in Mechanical Engineering. His research interests lie in Robot Learning, particularly focusing on Manipulation Planning and  Task and Motion Planning (TAMP)"
+  bio: "Berk, graduated from Bilkent University with a degree in Mechanical Engineering. His research interests lie in Robot Learning, particularly focusing on Manipulation Planning and  Task and Motion Planning (TAMP)."
   email: "berk.cicek@bilkent.edu.tr"
   website: "https://berk-cicek.github.io/"
   linkedin: "berkcicek8"

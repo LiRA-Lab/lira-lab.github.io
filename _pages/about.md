@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 
-labs_about: "We are a Robotics and Artificial Intelligence lab in <a href='https://w3.cs.bilkent.edu.tr/en/'>the Department of Computer Engineering at Bilkent University</a>. We work on intelligent robot assistants. Our current focus is on robotic manipulation. We merge the advances in deep learning with robotics to explore ideas like intuitive physics, task and motion planning, and ... ."
+labs_about: "Welcome to LiRA, where we focus on developing embodied AI agents. Unlike traditional passive AI systems, we specialize in crafting active AI agents capable of understanding and dynamically interacting with the physical world, much like humans do. Our goal extends to the seamless coexistence and collaboration between humans and robots, envisioning a future where these entities work harmoniously together. Drawing from an interdisciplinary toolkit, our research leverages methodologies from reinforcement learning, machine learning, deep learning, optimization, and probabilistic inference."
 physical_address: "Bilkent University<br>
 Department of Computer Engineering<br>
 Bilkent 06800 Ankara"
