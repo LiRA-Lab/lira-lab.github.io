@@ -17,6 +17,7 @@ profiles:
   email: "kaan.unlu@bilkent.edu.tr" 
   website: "https://ukaanunlu.wixsite.com/portfolio" 
   linkedin: "kaan-ünlü-37712a134"
+  scholar_userid: "SiZgIxkAAAAJ"
 - group: "MSc Students"
   align: left
   image: sarp_prof_pic.jpg
@@ -64,6 +65,15 @@ profiles:
   website: "https://berk-cicek.github.io/"
   linkedin: "berkcicek8"
   scholar_userid: "S03JmUcAAAAJ"
+- group: "MSc Students"
+  align: left
+  image: huzaifa_prof_pic.jpg
+  name: "Huzaifa Salahuddin"
+  bio: "Huzaifa, originally from Lahore, Pakistan, graduated from the College of Aeronautical Engineering at NUST with a degree in Avionics Engineering. Within robotics domain, he is deeply passionate about conducting research to apply machine learning techniques to enhance the integration between vision and language models. His goal by doing so, is to improve human-robot interaction for better cooperation in accomplishing various tasks."
+  email: "huzaifa@bilkent.edu.tr"
+  website: "https://github.com/HuzaifaSalahuddin/"
+  linkedin: "huzaifa-salahuddin-3966a8198"
+  twitter: "HuzaifaSal21617"
 
 # Add profiles for other groups here
 ---
