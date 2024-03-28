@@ -44,7 +44,7 @@ profiles:
   scholar_userid: "7a0txuoAAAAJ"
 - group: "MSc Students"
   align: left
-  image: ecekun_profile_pic.jpeg
+  image: ecekun_profile_pic.jpg
   name: "Ece Kunduracioglu"
   bio: "Ece graduated as valedictorian from the Department of Computer Engineering at Hacettepe University. Her current research interests include tool manipulation for robotic agents, particularly focusing on tool usage with keypoint representations through point clouds, and deep reinforcement learning."
   email: "e.kunduracioglu@bilkent.edu.tr"
