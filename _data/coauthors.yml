@@ -1,3 +1,57 @@
+"Toussaint":
+  - firstname: ["Marc", "M."]
+    url: https://www.user.tu-berlin.de/mtoussai/
+
+"Orthey":
+  - firstname: ["Andreas", "A."]
+    url: https://sites.google.com/view/aorthey/
+
+"Hartmann":
+  - firstname: ["Valentin", "Valentin Noah", "Valentin N.", "V. N.", "V."]
+    url: https://vhartmann.com/
+
+"Schubert":
+  - firstname: ["Ingmar", "I."]
+    url: https://ingmarschubert.com/
+
+"Driess":
+  - firstname: ["Danny", "D."]
+    url: https://dannydriess.github.io/
+
+"Ortiz-Haro":
+  - firstname: ["Joaquim", "J."]
+    url: https://quimortiz.github.io/
+
+"Weiskopf":
+  - firstname: ["Daniel", "D."]
+    url: https://www.vis.uni-stuttgart.de/en/institute/team/Weiskopf/
+
+"Wollherr":
+  - firstname: ["Dirk", "D."]
+    url: https://www.ei.tum.de/en/lsr/team/dozenten/dirk-wollherr/
+
+"Leibold":
+  - firstname: ["Marion", "M."]
+    url: https://www.ei.tum.de/en/lsr/team/dozenten/marion-leibold/
+
+"Buss":
+  - firstname: ["Martin", "M."]
+    url: https://www.ei.tum.de/en/lsr/team/professoren/martin-buss/
+
+"Sezgin":
+  - firstname: ["Metin", "M.", "T. M.", "Tevfik Metin"]
+    url: https://iui.ku.edu.tr/people/
+
+"Basdogan":
+  - firstname: ["Cagatay", "C."]
+    url: http://home.ku.edu.tr/~cbasdogan/
+
+"Kucukyilmaz": 
+  - firstname: ["Ayse", "A."]
+    url: http://www.cs.nott.ac.uk/~pszak1/
+
+
+# from the template : delete?
 "adams":
   - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
     url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams

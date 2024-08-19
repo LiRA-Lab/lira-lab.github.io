@@ -2,14 +2,355 @@
 ---
 
 @string{aps = {American Physical Society,}}
+@STRING{corl	= {CORL - Conf{.} on Robot Learning} }
+@STRING{neurips	= {NeurIPS - Conf{.} on Neural Information Processing Systems} }
+@STRING{iclr	= {ICLR - Int{.} Conf{.} on Learning Representations} }
+@STRING{icml  	= {ICML - Int{.} Conf{.} on Machine Learning} }
+@STRING{icra	= {IEEE ICRA - Int{.} Conf{.} on Robotics and Automation} }
+@STRING{ijcai	= {IJCAI - Int{.} Joint Conf{.} on Artificial Intelligence} }
+@STRING{iros	= {IEEE/RSJ IROS - Int{.} Conf{.} on Intelligent Robots and Systems} }
+@STRING{rss	    = {R:SS - Robotics: Science and Systems} }
+@STRING{tro	    = {IEEE TRO - Transactions on Robotics} }
+@STRING{ral	    = {IEEE RA-L - Robotics and Automation Letters} }
+@STRING{tnnls   = {IEEE TNNLS - Transactions on Neural Networks and Learning Systems} }
+@STRING{toh	    = {IEEE ToH - Transactions on Haptics} }
+@STRING{hapsym  = {IEEE Haptics Symposium} }
+@STRING{thri	= {ACM THRI - Transactions on Human-Robot Interaction} }
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+---
+---
+
+@InProceedings{22-braun-IROS,
+	title 		= {{RHH}-{LGP}: {Receding} {Horizon} {And} {Heuristics}-{Based} {Logic}-{Geometric} {Programming} {For} {Task} {And} {Motion} {Planning}},
+	author 		= {Braun, Cornelius V. and Ortiz-Haro, Joaquim and Toussaint, Marc and Oguz, Ozgur S.},
+	booktitle 	= {IEEE IROS},
+	year 		= {2022},
+	arxiv	 	= {2110.03420},
+	bibtex_show = {true},
+	abbr		= {22-braun-IROS},
+	selected 	= {true}
 }
+
+@article{22-hartmann-TRO,
+	title 		= {Long-{Horizon} {Multi}-{Robot} {Rearrangement} {Planning} for {Construction} {Assembly}},
+	author 		= {Hartmann, Valentin Noah and Orthey, Andreas and Driess, Danny and Oguz, Ozgur S. and Toussaint, Marc},
+	journal 	= {IEEE TRO - Transactions on Robotics},
+	arxiv	 	= {2106.02489},
+	year 		= {2022},
+	bibtex_show = {true},
+	abbr		= {22-hartmann-TRO},
+	selected 	= {true}
+}
+
+@article{21-kalousdian-RAL,
+	title 		= {Learning {Robotic} {Manipulation} of {Natural} {Materials} with {Variable} {Properties} for {Construction} {Tasks}},
+	author 		= {Kalousdian, Nicolas K. and Hartmann, Valentin N. and Toussaint, Marc and Menges, Achim and Oguz, Ozgur S.},
+	journal		= {IEEE RA-L - Robotics and Automation Letters (under rev.)},
+	year 		= {2021},
+	bibtex_show = {true},
+	abbr		= {21-kalousdian-RAL},
+	selected 	= {false}
+}
+
+@article{21-schubert-NeurIPS,
+	title 		= {Learning to {Execute}: {Efficient} {Learning} of {Universal} {Plan}-{Conditioned} {Policies} in {Robotics}},
+	shorttitle	= {Learning to {Execute}},
+	author 		= {Schubert, Ingmar and {Driess, Danny} and Oguz, Ozgur S. and Toussaint, Marc},
+	journal 	= neurips,
+	arxiv		= {2111.07908},
+	code 		= {https://github.com/ischubert/l2e},
+	year 		= {2021},
+	bibtex_show = {true},
+	abbr		= {21-schubert-NeurIPS},
+	selected 	= {true}
+}
+
+@InProceedings{21-schubert-ICLR,
+	title		= {Plan-Based Relaxed Reward Shaping for Goal-Directed Tasks},
+	author		= {Schubert, Ingmar and Oguz, Ozgur S. and Toussaint, Marc},
+	booktitle	= iclr,
+	arXiv		= {2107.06661v1},
+	youtube		= {vNL3zaJOKmo},
+	slides 		= {https://iclr.cc/media/iclr-2021/Slides/3020.pdf},
+	year		= {2021},
+	bibtex_show = {true},
+	abbr		= {21-schubert-ICLR}
+}
+
+@InProceedings{21-ortiz-ICRA,
+  title		= {Learning Efficient Constraint Graph Sampling for Robotic Sequential Manipulation},
+  author	= {Joaquim Ortiz-Haro and Valentin N. Hartmann and Ozgur S. Oguz and Marc Toussaint},
+  booktitle	= icra,
+  arXiv		= {2011.04828},
+  youtube	= {mCNdvjTbHNI},
+  ext_pdf 	= {https://argmin.lis.tu-berlin.de/papers/21-ortiz-ICRA.pdf},
+  year		= {2021},
+  bibtex_show = {true},
+  abbr		= {21-ortiz-ICRA}
+}
+
+@article{21-hagele-JOV,
+  author = {Hägele, David and Abdelaal, Moataz and Oguz, Ozgur S. and Toussaint, Marc and Weiskopf, Daniel},
+  doi = {10.1007/s12650-021-00786-8},
+  issn = {18758975},
+  journal = {Journal of Visualization},
+  refid = {Hägele2021},
+  title = {Visual analytics for nonlinear programming in robot motion planning},
+  html = {https://doi.org/10.1007/s12650-021-00786-8},
+  year		= {2021},
+  bibtex_show = {true},
+  abbr		= {21-hagele-JOV}
+}
+
+@InProceedings{20-nguyen-CORL,
+	title		= {Self-Supervised Learning of Scene-Graph Representations for Robotic Sequential Manipulation Planning},
+	author		= {Son T. Nguyen and Ozgur S. Oguz and Valentin N. Hartmann and Marc Toussaint},
+	booktitle	= corl,
+	pages 		= {2104--2119},
+	series		= {Proceedings of Machine Learning Research},
+	publisher	= {{PMLR}},
+	youtube		= {ZruIQ9V0_oo},
+	ext_pdf		= {https://proceedings.mlr.press/v155/nguyen21b/nguyen21b.pdf},
+	year		= {2020},
+	bibtex_show = {true},
+	abbr 		= {20-nguyen-CORL}
+}
+
+@article{20-zhou-TNNLS,
+	title 		= {Learning a {Low}-dimensional {Representation} of a {Safe} {Region} for {Safe} {Reinforcement} {Learning} on {Dynamical} {Systems}},
+	author 		= {Zhou, Zhehua and Oguz, Ozgur S and Leibold, Marion and Buss, Martin},
+	journal 	= tnnls,
+	arxiv		= {2010.09555},
+	ext_pdf		= {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9528905},
+	year 		= {2020},
+	bibtex_show = {true},
+	abbr		= {20-zhou-TNNLS}
+}
+
+@article{20-zhou-TRO,
+	title 	= {A {General} {Framework} to {Increase} {Safety} of {Learning} {Algorithms} for {Dynamical} {Systems} {Based} on {Region} of {Attraction} {Estimation}},
+	author 	= {Zhou, Zhehua and Oguz, Ozgur S. and Leibold, Marion and Buss, Martin},
+	journal = tro,
+	html	= {https://ieeexplore.ieee.org/abstract/document/9106864},
+	ext_pdf	= {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9106864},
+	ext_vid	= {https://ieeexplore.ieee.org/ielx7/8860/9210910/9106864/supp1-2992981.mp4?arnumber=9106864},
+	year 	= {2020},
+	bibtex_show = {true},
+	abbr 	= {20-zhou-TRO}
+}
+
+@InProceedings{20-hartmann-IROS,
+	title		= {Robust Task and Motion Planning for Long-Horizon Architectural Construction Planning},
+	author		= {Valentin N. Hartmann and Ozgur S. Oguz and Danny Driess and Marc Toussaint and Achim Menges},
+	year		= {2020},
+	arxiv		= {2003.07754},
+	booktitle	= iros,
+	youtube		= {j5S0s29IHwA},
+	doi			= {10.1109/IROS45743.2020.9341502},
+	issn		= {2153-0866},
+	bibtex_show = {true},
+	abbr		= {20-hartmann-IROS}
+}
+
+@inproceedings{20-hagele-VINCI,
+	title 	= {Visualization of {Nonlinear} {Programming} for {Robot} {Motion} {Planning}},
+	author 	= {Hägele, David and Abdelaal, Moataz and Oguz, Ozgur S. and Toussaint, Marc and Weiskopf, Daniel},
+	booktitle = {ACM VINCI - Proc{.} of the 13th {Int{.}} {Sym{.}} on {Visual} {Information} {Communication} and {Interaction}},
+	html	= {https://doi.org/10.1145/3430036.3430050},
+	arxiv	= {2101.12075},
+	year 	= {2020},
+	bibtex_show = {true},
+	abbr	= {20-hagele-VINCI}
+}
+
+@InProceedings{20-driess-ICRA,
+	title		= {Deep Visual Heuristics: Learning Feasibility of Mixed-Integer Programs for Manipulation Planning},
+	author		= {Danny Driess and Ozgur Oguz and Jung-Su Ha and Marc Toussaint},
+	booktitle	= icra,
+	year		= {2020},
+	youtube		= {3iWnIfm3Pz0},
+	doi			= {10.1109/icra40945.2020.9197291},
+	bibtex_show = {true},
+	abbr		= {20-driess-ICRA}
+}
+
+@Misc{20-leder-IROSws-wcar,
+	title		= {Co-Design in Architecture: A Modular Material-Robot Kinematic Construction System},
+	author		= {Samuel Leder and HyunGyu Kim and Ozgur S. Oguz and Valentin N. Hartmann and Marc Toussaint and Achim Menges and Metin Sitti},
+	year		= {2020},
+	howpublished	= {IROS: Workshop on Construction and Architecture Robotics},
+	bibtex_show = {true},
+	abbr 		= {20-leder-IROSws-wcar}
+}
+
+@Misc{20-hartmann-ICAPSws-robplan,
+	title		= {Planning Planning: The Path Planner as a Finite State Machine},
+	author		= {Valentin Hartmann and Ozgur S. Oguz and Marc Toussaint},
+	year		= {2020},
+	howpublished	= {ICAPS Workshop on Planning and Robotics},
+	youtube		= {3Qu4P9DaQWc},
+	bibtex_show = {true},
+	abbr 		= {20-hartmann-ICAPSws-robplan}
+}
+
+@inproceedings{20-nguyen-RSSws,
+	title 	= {From {Images} to {Task} {Planning}: {How} {NLP} {Can} {Help} {Physical} {Reasoning}},
+	author 	= {Nguyen, Son Tung and Oguz, Ozgur S. and Driess, Danny and Toussaint, Marc},
+	booktitle = {RSS Workshop on Self-supervised Robot Learning},
+	year 	= {2020},
+	bibtex_show = {true},
+	abbr 	= {20-nguyen-RSSws}
+}
+
+@inproceedings{20-van-RSSws,
+	title 	= {Guided sequential manipulation planning using a hierarchical policy},
+	author 	= {Van, Hoai My and Oguz, Ozgur S. and Zhou, Zhehua and Toussaint, Marc},
+  booktitle = {RSS Workshop on Learning in Task and Motion Planning},
+	year 	= {2020},
+	bibtex_show = {true},
+	abbr	= {20-van-RSSws}
+}
+
+@Misc{19-driess-RSSws,
+	title		= {Hierarchical Task and Motion Planning using Logic-Geometric Programming (HLGP)},
+	author		= {Danny Driess and Ozgur Oguz and Marc Toussaint},
+	year		= {2019},
+	howpublished= {RSS Workshop on Robust Task and Motion Planning},
+	youtube		= {VndjJtzl7ho},
+	bibtex_show = {true},
+	abbr		= {19-driess-RSSws}
+}
+
+@inproceedings{19-axenopulos-SMART,
+	title 		= {A {Hybrid} {Human}-{Robot} {Collaborative} {Environment} for {Recycling} {Electrical} and {Electronic} {Equipment}},
+	booktitle 	= {{IEEE} {SmartWorld}, {Ubiquitous} {Intelligence} \& {Computing}, {Advanced} \& {Trusted} {Computing}, {Scalable} {Computing} \& {Communications}, {Cloud} \& {Big} {Data} {Computing}, {Internet} of {People} and {Smart} {City} {Innovation} ({SmartWorld}/{SCALCOM}/{UIC}/{ATC}/{CBDCom}/{IOP}/{SCI})},
+	author 		= {Axenopulos, Apostolos and Papadopoulos, Georgios and Giakoumis, Dimitrios and Kostavelis, Ioannis and Papadimitriou, Alexis Papadimitriou and Sillaurren, Sara and Bastida, Leire and Oguz, Ozgur and Wollherr, Dirk and Garnica, Eugenio and Vouloutsi, Vasiliki and Verschure, Paul and Tzovaras, Dimitrios and Daras, Petros},
+	year 		= {2019},
+	bibtex_show = {true},
+	abbr		= {19-axenopulos-SMART}
+}
+
+@article{19-oguz-THRI,
+	title 	= {An {Ontology} for {Human}-{Human} {Interactions} and {Learning} {Interaction} {Behavior} {Policies}},
+	author 	= {Oguz, Ozgur S. and Rampeltshammer, Wolfgang and Paillan, Sebastian and Wollherr, Dirk},
+	journal = thri,
+	year 	= {2019},
+	bibtex_show = {true},
+	abbr	= {19-oguz-THRI}
+}
+
+@article{19-hoang-FRAI,
+	title 		= {Adaptation and {Transfer} of {Robot} {Motion} {Policies} for {Close} {Proximity} {Human}-{Robot} {Interaction}},
+	author 		= {Hoang Dinh, Khoi and Oguz, Ozgur S. and Elsayed, Mariam and Wollherr, Dirk},
+	journal 	= {Frontiers in Robotics and AI},
+	year 		= {2019},
+	bibtex_show = {true},
+	abbr		= {19-hoang-FRAI}
+}
+
+@inproceedings{18-oguz-NeurIPSws,
+	title = {Learning {Hand} {Movement} {Interaction} {Control} {Using} {RNNs}: {From} {HHI} to {HRI}},
+	booktitle = {{NeurIPS} Workshop on {Imitation} {Learning} and its {Challenges} in {Robotics}},
+	author = {Oguz, Ozgur S and {Pfirrman, Ben M.} and {Wollherr, Dirk}},
+	year = {2018},
+	bibtex_show = {true},
+	abbr	= {18-oguz-NeurIPSws}
+}
+
+@article{18-oguz-RAL,
+	title 		= {Learning {Hand} {Movement} {Interaction} {Control} {Using} {RNNs}: {From} {HHI} to {HRI}},
+	author 		= {Oguz, Ozgur S. and Pfirrmann, Ben M. and Guo, Mingpan and Wollherr, Dirk},
+	journal 	= ral,
+	year 		= {2018},
+	bibtex_show = {true},
+	abbr		= {18-oguz-RAL}
+}
+
+@article{18-oguz-FRAI,
+	title 		= {A {Hybrid} {Framework} for {Understanding} and {Predicting} {Human} {Reaching} {Motions}},
+	author 		= {Oguz, Ozgur S. and Zhou, Zhehua and Wollherr, Dirk},
+	journal 	= {Frontiers in Robotics and AI},
+	year 		= {2018},
+	bibtex_show = {true},
+	abbr		= {18-oguz-FRAI}
+}
+
+@article{18-oguz-SciRep,
+	title 		= {An {Inverse} {Optimal} {Control} {Approach} to {Explain} {Human} {Arm} {Reaching} {Control} {Based} on {Multiple} {Internal} {Models}},
+	author 		= {Oguz, Ozgur S. and Zhou, Zhehua and Glasauer, Stefan and Wollherr, Dirk},
+	journal 	= {Scientific Reports},
+	year 		= {2018},
+	bibtex_show = {true},
+	abbr		= {18-oguz-SciRep}
+}
+
+@inproceedings{17-oguz-ROMAN,
+	title 		= {Progressive stochastic motion planning for human-robot interaction},
+	author 		= {Oguz, Ozgur S. and Sari, Omer C. and Dinh, Khoi H. and Wollherr, Dirk},
+	booktitle 	= {26th {IEEE} {International} {Symposium} on {Robot} and {Human} {Interactive} {Communication} ({RO}-{MAN})},
+	year 		= {2017},
+	bibtex_show = {true},
+	abbr		= {17-oguz-ROMAN}
+}
+
+@incollection{17-oguz-ISER,
+	title 		= {Hybrid {Human} {Motion} {Prediction} for {Action} {Selection} {Within} {Human}-{Robot} {Collaboration}},
+	booktitle 	= {{International} {Symposium} on {Experimental} {Robotics}},
+	author 		= {Oguz, Ozgur S. and Gabler, Volker and Huber, Gerold and Zhou, Zhehua and Wollherr, Dirk},
+	year 		= {2017},
+	bibtex_show = {true},
+	abbr		= {17-oguz-ISER}
+}
+
+@inproceedings{17-gabler-ICRA,
+	title		= {A game-theoretic approach for adaptive action selection in close proximity human-robot-collaboration},
+	booktitle	= icra,
+	author 		= {Gabler, Volker and Stahl, Tim and Huber, Gerold and Oguz, Ozgur and Wollherr, Dirk},
+	year 		= 2017,
+	bibtex_show = {true},
+	abbr		= {17-icra-ICRA}
+}
+
+@inproceedings{15-dinh-ARSO,
+	title 		= {An approach to integrate human motion prediction into local obstacle avoidance in close human-robot collaboration},
+	booktitle 	= {{IEEE} {International} {Workshop} on {Advanced} {Robotics} and its {Social} {Impacts} ({ARSO})},
+	author 		= {Dinh, Khoi Hoang and Oguz, Ozgur and Huber, Gerold and Gabler, Volker and Wollherr, Dirk},
+	year 		= {2015},
+	bibtex_show = {true},
+	abbr		= {15-dinh-ARSO}
+}
+
+@incollection{12-oguz-BOOK,
+	title 		= {Improving {Human}-{Computer} {Cooperation} {Through} {Haptic} {Role} {Exchange} and {Negotiation}},
+	author 		= {Kucukyilmaz, Ayse and Oguz, Salih Ozgur and Sezgin, Tevfik Metin and Basdogan, Cagatay},
+	booktitle 	= {Immersive {Multimodal} {Interactive} {Presence}},
+	publisher 	= {Springer London},
+	year 		= {2012},
+	bibtex_show = {true},
+	abbr		= {12-oguz-BOOK}
+}
+
+@article{oguz_supporting_2012,
+	title		= {Supporting {Negotiation} {Behavior} with {Haptics}-{Enabled} {Human}-{Computer} {Interfaces}},
+	author 		= {Oguz, Ozgur S. and Kucukyilmaz, Ayse and Metin Sezgin, Tevfik and Basdogan, Cagatay},
+	journal 	= toh,
+	year 		= {2012},
+	bibtex_show = {true},
+	abbr 		= {oguz_supporting_2012}
+}
+
+@inproceedings{oguz_haptic_2010,
+	title 		= {Haptic negotiation and role exchange for collaboration in virtual environments},
+	author 		= {Oguz, Ozgur S. and Kucukyilmaz, Ayse and Sezgin, Tevfik Metin and Basdogan, Cagatay},
+	booktitle 	= hapsym,
+	year 		= {2010},
+	bibtex_show = {true},
+	abbr 		= {oguz_haptic_2010}
+}
+
+
+---
+---
 
 @book{einstein1956investigations,
   bibtex_show={true},
@@ -20,21 +361,9 @@
   preview={brownian-motion.gif}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
 @article{PhysRev.47.777,
   abbr={PhysRev},
+  bibtex_show={true},
   title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
   author={Einstein, A. and Podolsky, B. and Rosen, N.},
   abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
@@ -52,42 +381,9 @@
   pdf={example_pdf.pdf},
   altmetric={248277},
   dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  selected={true}
+  google_scholar_id={0tWX-EMAAAAJ:hC7cP41nSMkC},
+  selected={false}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
-}
+---
+---

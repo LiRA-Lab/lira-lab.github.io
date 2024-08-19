@@ -9,15 +9,28 @@ nav_order: 7
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
+- group: "Group Leader"
+  align: left
+  image: bio_oz.webp
+  name: "Ozgur S. Oguz"
+  bio: ""
+  email: "ozgur.oguz@bilkent.edu.tr" 
+  website: "https://oz-oguz.github.io" 
+  linkedin: "ozguroguz"
+  scholar_userid: "0tWX-EMAAAAJ"
+
+# PhD
 - group: "PhD Students"
   align: left
   image: .jpg
   name: "Kaan Ünlü"
-  bio: "Master of Game Design and Bachelor of Compute Science through Aalto and Bilkent Universities. Research interests lie in Environmental Storytelling through mechanics, Teamed adversarial RL in stage based challenges and High Efficiency non-repeating procedural shaders . I also do longsword HEMA and foil fencing."
+  bio: "Master of Game Design and Bachelor of Computer Science through Aalto and Bilkent Universities. Research interests lie in Environmental Storytelling through mechanics, Teamed adversarial RL in stage based challenges and High Efficiency non-repeating procedural shaders . I also do longsword HEMA and foil fencing."
   email: "kaan.unlu@bilkent.edu.tr" 
   website: "https://ukaanunlu.wixsite.com/portfolio" 
   linkedin: "kaan-ünlü-37712a134"
   scholar_userid: "SiZgIxkAAAAJ"
+
+# Masters
 - group: "MSc Students"
   align: left
   image: sarp_prof_pic.jpg
@@ -28,6 +41,7 @@ profiles:
   linkedin: "arda-sarp-yenicesu"
   twitter: "ASYenicesu"
   scholar_userid: "MjKlcQwAAAAJ"
+
 - group: "MSc Students"
   align: left
   image: kutay_prof_pic.png
@@ -35,6 +49,7 @@ profiles:
   bio: "Kutay graduated from the Computer Engineering department at Bilkent University. His current research interests include reinforcement learning (particularly exploration and multi-agent RL in robotics and similar embodied agent settings), and machine learning and AI in general."
   email: "kutay.demiray@bilkent.edu.tr"
   linkedin: "kutay-demiray-ba462518b"
+
 - group: "MSc Students"
   align: left
   image: dilruba_prof_pic.jpg
@@ -49,6 +64,7 @@ profiles:
   bio: "Ece graduated as valedictorian from the Department of Computer Engineering at Hacettepe University. Her current research interests include tool manipulation for robotic agents, particularly focusing on tool usage with keypoint representations through point clouds, and deep reinforcement learning."
   email: "e.kunduracioglu@bilkent.edu.tr"
   linkedin: "ecekunduracioglu"
+
 - group: "MSc Students"
   align: left
   image: gunef_prof_pic.jpg
@@ -56,6 +72,7 @@ profiles:
   bio: " Günef earned her Bachelor's degree in Electrical and Electronics Engineering from Bilkent University. Currently, she is a full-time Master's student in Computer Science at Bilkent University, with a research focus on the applications of reinforcement learning in robotic agents."
   email: "senay.bozkurt@bilkent.edu.tr"
   linkedin: "g%C3%BCnef-bozkurt-438a5b19a"
+
 - group: "MSc Students"
   align: left
   image: berk_prof_pic.png
@@ -65,6 +82,7 @@ profiles:
   website: "https://berk-cicek.github.io/"
   linkedin: "berkcicek8"
   scholar_userid: "S03JmUcAAAAJ"
+
 - group: "MSc Students"
   align: left
   image: huzaifa_prof_pic.jpg
