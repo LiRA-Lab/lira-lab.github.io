@@ -22,13 +22,23 @@ profiles:
 # PhD
 - group: "PhD Students"
   align: left
-  image: .jpg
-  name: "Kaan Ünlü"
-  bio: "Master of Game Design and Bachelor of Computer Science through Aalto and Bilkent Universities. Research interests lie in Environmental Storytelling through mechanics, Teamed adversarial RL in stage based challenges and High Efficiency non-repeating procedural shaders . I also do longsword HEMA and foil fencing."
-  email: "kaan.unlu@bilkent.edu.tr" 
-  website: "https://ukaanunlu.wixsite.com/portfolio" 
-  linkedin: "kaan-ünlü-37712a134"
-  scholar_userid: "SiZgIxkAAAAJ"
+  image: logo.png
+  name: "Ilyas Kocaer"
+  bio: ""
+  email: "ilyaskocaer@gmail.com" 
+  website: "" 
+  linkedin: ""
+  scholar_userid: ""
+
+- group: "PhD Students"
+  align: left
+  image: logo.png
+  name: "Sepehr Nourmohammadi"
+  bio: ""
+  email: "sepehr@bilkent.edu.tr" 
+  website: "" 
+  linkedin: ""
+  scholar_userid: ""
 
 # Masters
 - group: "MSc Students"
@@ -59,19 +69,11 @@ profiles:
   scholar_userid: "7a0txuoAAAAJ"
 - group: "MSc Students"
   align: left
-  image: ecekun_profile_pic.jpeg
+  image: ecekun_prof_pic.jpg
   name: "Ece Kunduracioglu"
   bio: "Ece graduated as valedictorian from the Department of Computer Engineering at Hacettepe University. Her current research interests include tool manipulation for robotic agents, particularly focusing on tool usage with keypoint representations through point clouds, and deep reinforcement learning."
   email: "e.kunduracioglu@bilkent.edu.tr"
   linkedin: "ecekunduracioglu"
-
-- group: "MSc Students"
-  align: left
-  image: gunef_prof_pic.jpg
-  name: "Günef Şenay Bozkurt"
-  bio: " Günef earned her Bachelor's degree in Electrical and Electronics Engineering from Bilkent University. Currently, she is a full-time Master's student in Computer Science at Bilkent University, with a research focus on the applications of reinforcement learning in robotic agents."
-  email: "senay.bozkurt@bilkent.edu.tr"
-  linkedin: "g%C3%BCnef-bozkurt-438a5b19a"
 
 - group: "MSc Students"
   align: left
@@ -85,13 +87,43 @@ profiles:
 
 - group: "MSc Students"
   align: left
-  image: huzaifa_prof_pic.jpg
+  image: logo.png
   name: "Huzaifa Salahuddin"
   bio: "Huzaifa, originally from Lahore, Pakistan, graduated from the College of Aeronautical Engineering at NUST with a degree in Avionics Engineering. Within robotics domain, he is deeply passionate about conducting research to apply machine learning techniques to enhance the integration between vision and language models. His goal by doing so, is to improve human-robot interaction for better cooperation in accomplishing various tasks."
   email: "huzaifa@bilkent.edu.tr"
   website: "https://github.com/HuzaifaSalahuddin/"
   linkedin: "huzaifa-salahuddin-3966a8198"
   twitter: "HuzaifaSal21617"
+
+- group: "MSc Students"
+  align: left
+  image: logo.png
+  name: "Hikmet Simsir"
+  bio: ""
+  linkedin: ""
+
+- group: "MSc Students"
+  align: left
+  image: logo.png
+  name: "Bora Tuncer"
+  bio: ""
+  linkedin: ""
+
+- group: "MSc Students"
+  align: left
+  image: logo.png
+  name: "M. Hedi Elfikr"
+  bio: ""
+  linkedin: ""
+
+- group: "MSc Students"
+  align: left
+  image: logo.png
+  name: "Mert Kaan Er"
+  bio: ""
+  linkedin: ""
+  
+
 
 # Add profiles for other groups here
 ---
