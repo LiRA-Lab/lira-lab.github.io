@@ -98,14 +98,14 @@ profiles:
 - group: "MSc Students"
   align: left
   image: logo.png
-  name: "Hikmet Simsir"
+  name: "M. Hikmet Simsir"
   bio: ""
   linkedin: ""
 
 - group: "MSc Students"
   align: left
   image: logo.png
-  name: "Bora Tuncer"
+  name: "C. Bora Tuncer"
   bio: ""
   linkedin: ""
 
@@ -119,7 +119,7 @@ profiles:
 - group: "MSc Students"
   align: left
   image: logo.png
-  name: "Mert Kaan Er"
+  name: "Mert K. Er"
   bio: ""
   linkedin: ""
   
