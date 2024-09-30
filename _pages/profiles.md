@@ -118,10 +118,11 @@ profiles:
 
 - group: "MSc Students"
   align: left
-  image: logo.png
+  image: mert_kaan_er_picture.jpg
   name: "Mert K. Er"
-  bio: ""
-  linkedin: ""
+  bio: "Mert is from Istanbul, Turkey, and lives in Ankara. He graduated from the Mathematics Department at Bilkent University and is doing his Master’s in Computer Engineering at Bilkent University. His research interest is designing embodied agents to cooperate with humans in various scenarios and tasks using deep learning techniques."
+  email: "kaan.er@bilkent.edu.tr"
+  linkedin: "mert-kaan-er-3a910b238"
   
 
 
