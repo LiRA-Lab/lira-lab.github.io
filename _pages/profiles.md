@@ -64,6 +64,7 @@ profiles:
   align: left
   image: dilruba_prof_pic.jpg
   name: "Dilruba Sultan Haliloglu"
+  bio: "Dilruba completed a double major in Computer Engineering and Mathematics at Bilkent University. Her research interests include human-computer interaction and long-horizon task and motion planning."
   email: "sultan.haliloglu@bilkent.edu.tr"
   linkedin: "dilruba-sultan-haliloglu"
   scholar_userid: "7a0txuoAAAAJ"
