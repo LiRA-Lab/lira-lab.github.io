@@ -111,10 +111,14 @@ profiles:
 
 - group: "MSc Students"
   align: left
-  image: logo.png
+  image: hedi_profile_pic.png
   name: "M. Hedi Elfikr"
-  bio: ""
-  linkedin: ""
+  bio: "Hedi, originally from Tunis, Tunisia, holds a degree in Computer Engineering from Hacettepe University. He was previously supervised by Professors Aykut Erdem and Erkut Erdem, where he worked on omnidirectional imaging. His current research interests lie in 3D computer vision
+and robotics."
+  email: "hedi.elfkir@bilkent.edu.tr"
+  linkedin: "m-hedi-elfkir-16598516a"
+  website: "https://mohamedhedi-elfkir.github.io/HediElfkir.github.io/"
+
 
 - group: "MSc Students"
   align: left
