@@ -105,10 +105,10 @@ profiles:
 
 - group: "MSc Students"
   align: left
-  image: logo.png
-  name: "C. Bora Tuncer"
-  bio: ""
-  linkedin: ""
+  image: bora_foto.jpg
+  name: "Cankut Bora Tuncer"
+  bio: "Bora, originally from Ankara, Turkey, holds a degree in Electrical and Electronics Engineering from Bilkent University. Driven by his passion for Intelligent Robotics, he pursued a master's degree in the Computer Science department. His research interests include manipulation planning, intuitive physics, and solving physical puzzles."
+  linkedin: "cankut-bora-tuncer"
 
 - group: "MSc Students"
   align: left
