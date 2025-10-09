@@ -1,0 +1,161 @@
+---
+---
+
+:root {
+  --global-theme-color: #003366;      /* main blue */
+  --global-theme-color-dark: #001F3F; /* hover/dark */
+  --global-theme-color-light: #007BFF;/* lighter accent */
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+  color: var(--global-theme-color);
+}
+
+/* Navbar active/hover link */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--global-theme-color) !important;
+}
+
+.news, .news * {
+    color: #1a1a1a !important;   /* readable dark gray */
+  }
+/* links inside news */
+.news a,
+.news .post-title a {
+  color: #003366 !important;    /* dark blue */
+  text-decoration: none;
+}
+.news a:hover,
+.news .post-title a:hover {
+  color: #0056b3 !important;
+  text-decoration: underline;
+}
+
+/* date badge */
+.news .post-date {
+  color: #555 !important;
+  background: #f1f3f5 !important;  /* subtle gray badge */
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* tidy spacing */
+.news .post-item { 
+  padding: 10px 0; 
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+/*--------------------- People ---------------------*/
+.profile-image img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.profile-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #fafbfc;
+  border: 1px solid #e3e6ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.profile-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.profile-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #e3e6ea;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.profile-info p {
+  margin-bottom: 8px;
+  color: #444;
+  line-height: 1.5;
+}
+
+
+/* Alumni grid */
+.alumni-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;             /* match content width */
+  width: 100%;
+  margin: 8px 0 24px;           /* remove auto */
+  justify-content: flex-start;  /* align with content edge */
+  padding: 0;
+}
+
+/* Desktop: 3 equal columns */
+@media (min-width: 860px) {
+  .alumni-grid {
+    grid-template-columns: repeat(3, 240px);
+  }
+}
+
+/* Mobile: stack items */
+@media (max-width: 859px) {
+  .alumni-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Alumni cards */
+.alumni-card {
+  width: 250px;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #eceff3;
+  border-radius: 10px;
+  background: #fafbfc;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.alumni-card img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.alumni-name {
+  font-weight: 600;
+}
+
+.alumni-role,
+.alumni-now {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.alumni-links a {
+  margin: 0 4px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
