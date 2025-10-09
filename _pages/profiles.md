@@ -1,10 +1,10 @@
 ---
 layout: profiles
-permalink: /team/
-title: Team
+permalink: /people/
+title: People
 description:
 nav: true
-nav_order: 7
+nav_order: 4
 
 profiles:
   # if you want to include more than one profile, just replicate the following block
@@ -13,7 +13,7 @@ profiles:
   align: left
   image: bio_oz.webp
   name: "Ozgur S. Oguz"
-  bio: ""
+  bio: "Özgür S. Öğüz is an Assistant Professor in the Department of Computer Engineering at Bilkent University and leads the Learning for Intelligent Robotic Agents (LiRA) Lab. His research focuses on enhancing autonomous agents with advanced learning, reasoning, and planning capabilities, particularly in robotics and decision-making domains. Previously, he was a postdoctoral researcher at the Learning and Intelligence Systems Lab (University of Stuttgart & Max Planck Institute for Intelligent Systems, IntCDC). He received his Ph.D. from TU Munich and completed his undergraduate studies at UBC and Koç University."
   email: "ozgur.oguz@bilkent.edu.tr" 
   website: "https://oz-oguz.github.io" 
   linkedin: "ozguroguz"
@@ -22,71 +22,15 @@ profiles:
 # PhD
 - group: "PhD Students"
   align: left
-  image: logo.png
-  name: "Ilyas Kocaer"
-  bio: ""
-  email: "ilyaskocaer@gmail.com" 
-  website: "" 
-  linkedin: ""
-  scholar_userid: ""
+  image: ece_prof_pic.jpeg
+  name: "Ece Kunduracioglu"
+  bio: "Ece Kunduracıoğlu graduated as valedictorian from the Department of Computer Engineering at Hacettepe University and completed her master’s degree in Computer Engineering at Bilkent University in the LiRA Lab. Her research focuses on tool use in robotic agents, with an emphasis on tool manipulation through hybrid approaches that integrate learning and motion optimization. Her broader interests include perception and deep reinforcement learning."
+  email: "e.kunduracioglu@bilkent.edu.tr" 
+  website: "https://github.com/ecekun" 
+  linkedin: "ecekunduracioglu"
+  scholar_userid: "HfEhXLgAAAAJ"
 
 - group: "PhD Students"
-  align: left
-  image: logo.png
-  name: "Sepehr Nourmohammadi"
-  bio: ""
-  email: "sepehr@bilkent.edu.tr" 
-  website: "" 
-  linkedin: ""
-  scholar_userid: ""
-
-# Masters
-- group: "MSc Students"
-  align: left
-  image: sarp_prof_pic.jpg
-  name: "Arda Sarp Yenicesu"
-  bio: "Sarp, originally from Ankara, Turkey, graduated from Bilkent University with a degree in Electrical and Electronic Engineering. His research interests lie in applying Causal ML to Robotics, particularly focusing on Causal Reinforcement Learning and exploring applications in Task and Motion Planning (TAMP) and personal decision-making."
-  email: "sarp.yenicesu@bilkent.edu.tr"
-  website: "https://asyncs.github.io/"
-  linkedin: "arda-sarp-yenicesu"
-  twitter: "ASYenicesu"
-  scholar_userid: "MjKlcQwAAAAJ"
-
-- group: "MSc Students"
-  align: left
-  image: kutay_prof_pic.png
-  name: "Kutay Demiray"
-  bio: "Kutay graduated from the Computer Engineering department at Bilkent University. His current research interests include reinforcement learning (particularly exploration and multi-agent RL in robotics and similar embodied agent settings), and machine learning and AI in general."
-  email: "kutay.demiray@bilkent.edu.tr"
-  linkedin: "kutay-demiray-ba462518b"
-
-- group: "MSc Students"
-  align: left
-  image: dilruba_prof_pic.jpg
-  name: "Dilruba Sultan Haliloglu"
-  bio: "Dilruba completed a double major in Computer Engineering and Mathematics at Bilkent University. Her research interests include human-computer interaction and long-horizon task and motion planning."
-  email: "sultan.haliloglu@bilkent.edu.tr"
-  linkedin: "dilruba-sultan-haliloglu"
-  scholar_userid: "7a0txuoAAAAJ"
-- group: "MSc Students"
-  align: left
-  image: ecekun_prof_pic.jpg
-  name: "Ece Kunduracioglu"
-  bio: "Ece graduated as valedictorian from the Department of Computer Engineering at Hacettepe University. Her current research interests include tool manipulation for robotic agents, particularly focusing on tool usage with keypoint representations through point clouds, and deep reinforcement learning."
-  email: "e.kunduracioglu@bilkent.edu.tr"
-  linkedin: "ecekunduracioglu"
-
-- group: "MSc Students"
-  align: left
-  image: berk_prof_pic.png
-  name: "Berk Çiçek"
-  bio: "Berk, graduated from Bilkent University with a degree in Mechanical Engineering. His research interests lie in Robot Learning, particularly focusing on Manipulation Planning and  Task and Motion Planning (TAMP)."
-  email: "berk.cicek@bilkent.edu.tr"
-  website: "https://berk-cicek.github.io/"
-  linkedin: "berkcicek8"
-  scholar_userid: "S03JmUcAAAAJ"
-
-- group: "MSc Students"
   align: left
   image: logo.png
   name: "Huzaifa Salahuddin"
@@ -96,12 +40,23 @@ profiles:
   linkedin: "huzaifa-salahuddin-3966a8198"
   twitter: "HuzaifaSal21617"
 
+
+# Masters
+
+- group: "MSc Students"
+  align: left
+  image: kutay_prof_pic.png
+  name: "Kutay Demiray"
+  bio: "Kutay graduated from the Computer Engineering department at Bilkent University. His current research interests include reinforcement learning (particularly exploration and multi-agent RL in robotics and similar embodied agent settings), and machine learning and AI in general."
+  email: "kutay.demiray@bilkent.edu.tr"
+  linkedin: "kutay-demiray-ba462518b"
+
+
 - group: "MSc Students"
   align: left
   image: logo.png
   name: "M. Hikmet Simsir"
   bio: ""
-  linkedin: ""
 
 - group: "MSc Students"
   align: left
@@ -114,24 +69,67 @@ profiles:
 
 - group: "MSc Students"
   align: left
-  image: hedi_profile_pic.png
-  name: "M. Hedi Elfikr"
-  bio: "Hedi, originally from Tunis, Tunisia, holds a degree in Computer Engineering from Hacettepe University. He was previously supervised by Professors Aykut Erdem and Erkut Erdem, where he worked on omnidirectional imaging. His current research interests lie in 3D computer vision
-and robotics."
-  email: "hedi.elfkir@bilkent.edu.tr"
-  linkedin: "m-hedi-elfkir-16598516a"
-  website: "https://mohamedhedi-elfkir.github.io/HediElfkir.github.io/"
-
-
-- group: "MSc Students"
-  align: left
   image: mert_kaan_er_picture.jpg
   name: "Mert K. Er"
   bio: "Mert is from Istanbul, Turkey, and lives in Ankara. He graduated from the Mathematics Department at Bilkent University and is doing his Master’s in Computer Engineering at Bilkent University. His research interest is designing embodied agents to cooperate with humans in various scenarios and tasks using deep learning techniques."
   email: "kaan.er@bilkent.edu.tr"
   linkedin: "mert-kaan-er-3a910b238"
+
+- group: "MSc Students"
+  align: left
+  image: mahyar_prof_pic.jpg
+  name: "Mahyar Fardinfarfar"
+  bio: "Mahyar is from Tabriz, Iran. He graduated from the ECE Department at Tabriz University and is doing his Master’s in Computer Engineering at Bilkent University. His research interest is computer vision and software/hardware automation."
+  email: "mahyarfardinfar@gmail.com"
+  website: "https://mahyarfardin.github.io"
+  linkedin: "mahyar-fardinfar1"
+  scholar_userid: "6d226_oAAAAJ"
+
+- group: "MSc Students"
+  align: left
+  image: hedi_profile_pic.png
+  name: "M. Hedi Elfikr"
+  bio: "Hedi, originally from Tunis, Tunisia, holds a degree in Computer Engineering from Hacettepe University. He was previously supervised by Professors Aykut Erdem and Erkut Erdem, where he worked on omnidirectional imaging. His current research interests lie in 3D computer vision and robotics."
+  email: "hedi.elfkir@bilkent.edu.tr"
+  linkedin: "m-hedi-elfkir-16598516a"
+  website: "https://mohamedhedi-elfkir.github.io/HediElfkir.github.io/"
   
+
+- group: "Alumni"
+  image: sarp_prof_pic.jpg
+  name: "Arda Sarp Yenicesu"
+  now: "AI Engineer @ ASELSAN | Robotics Researcher"
+  role: "M.Sc., 2025"
+  website: "https://asyncs.github.io/"
+  linkedin: "arda-sarp-yenicesu"
+  twitter: "ASYenicesu"
+  scholar_userid: "MjKlcQwAAAAJ"
+
+- group: "Alumni"
+  image: berk_prof_pic.png
+  name: "Berk Çiçek"
+  role: "M.Sc., 2025"
+  now: "Data Scientist @ Trendyol Group"
+  website: "https://berk-cicek.github.io/"
+  linkedin: "berkcicek8"
+  scholar_userid: "S03JmUcAAAAJ"
+
+- group: "Alumni"
+  image: dilruba_prof_pic.jpg
+  name: "Dilruba Sultan Haliloglu"
+  role: "M.Sc., 2025"
+  linkedin: "dilruba-sultan-haliloglu"
+  scholar_userid: "7a0txuoAAAAJ"
+
+- group: "Alumni"
+  image: baris_prof_pic.jpeg
+  name: "Baris Bilgin S."
+  role: "M.Sc., 2025"
+  now: "AI Engineer @ KAREL"
+
+
 
 
 # Add profiles for other groups here
 ---
+

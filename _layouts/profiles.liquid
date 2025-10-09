@@ -10,43 +10,73 @@ layout: page
         {% assign group_profiles = page.profiles | where: 'group', group %}
         {% if group == 'Group Leader' or group == 'Post-Doc Researchers' or group == 'PhD Students' or group == 'MSc Students' or group == 'Undergraduate Students' or group == 'Alumni' %}
           <h2>{{ group }}</h2>
-          {% for profile in group_profiles %}
-            <hr>
-            <div style="display: flex; align-items: center; gap: 20px;">
-              {% if profile.image %}
-                <div class="profile-image" style="flex-shrink: 0; width: 150px; height: 150px; overflow: hidden;">
-                  <!-- Update the path construction here -->
-                  <img src="{{ '/assets/img/' | append: profile.image }}" class="{{ profile.image_circular | bool: 'img-fluid z-depth-1 rounded-circle', 'img-fluid z-depth-1 rounded' }}" alt="{{ profile.name }}" style="width: 100%; height: auto; max-width: 150px; max-height: 150px; object-fit: cover;">
-                </div>
-              {% endif %}
-              
-              <div class="profile-info" style="flex-grow: 1;">
-                {% if profile.name %}
-                  <h3>{{ profile.name }}</h3>
+            {% if group == 'Alumni' %}
+              <!-- Compact grid layout for Alumni -->
+              <div class="alumni-grid">
+                {% for profile in group_profiles %}
+                  <div class="alumni-card">
+                    {% if profile.image %}
+                      <img src="{{ '/assets/img/' | append: profile.image }}" alt="{{ profile.name }}">
+                    {% endif %}
+                    {% if profile.name %}
+                      <div class="alumni-name">{{ profile.name }}</div>
+                    {% endif %}
+                    {% if profile.role %}
+                      <div class="alumni-role">{{ profile.role }}</div>
+                    {% endif %}
+                    {% if profile.now %}
+                      <div class="alumni-now">Now: {{ profile.now }}</div>
+                    {% endif %}
+                    <div class="alumni-links">
+                      {% if profile.website %}
+                        <a href="{{ profile.website }}" title="Website"><i class="fa-solid fa-globe"></i></a>
+                      {% endif %}
+                      {% if profile.linkedin %}
+                        <a href="https://www.linkedin.com/in/{{ profile.linkedin }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                      {% endif %}
+                      {% if profile.scholar_userid %}
+                        <a href="https://scholar.google.com/citations?user={{ profile.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+
+            {% else %}
+              <!-- Original layout for other groups -->
+              {% for profile in group_profiles %}
+              <div class="profile-card">
+                {% if profile.image %}
+                  <img src="{{ '/assets/img/' | append: profile.image }}" alt="{{ profile.name }}">
                 {% endif %}
-                {% if profile.bio %}
-                  <p>{{ profile.bio }}</p>
-                {% endif %}
-                <div class="contact-info">
-                  {% if profile.email %}
-                    <a href="mailto:{{ profile.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <div class="profile-info">
+                  {% if profile.name %}
+                    <h3>{{ profile.name }}</h3>
                   {% endif %}
-                  {% if profile.website %}
-                    <a href="{{ profile.website }}" title="Website"><i class="fa-solid fa-globe"></i></a>
+                  {% if profile.bio %}
+                    <p>{{ profile.bio }}</p>
                   {% endif %}
-                  {% if profile.scholar_userid %}
-                    <a href="https://scholar.google.com/citations?user={{ profile.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-                  {% endif %}
-                  {% if profile.twitter %}
-                    <a href="https://twitter.com/{{ profile.twitter }}" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                  {% endif %}
-                  {% if profile.linkedin %}
-                    <a href="https://www.linkedin.com/in/{{ profile.linkedin }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                  {% endif %}
+                  <div class="contact-info">
+                    {% if profile.email %}
+                      <a href="mailto:{{ profile.email }}" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    {% endif %}
+                    {% if profile.website %}
+                      <a href="{{ profile.website }}" title="Website"><i class="fa-solid fa-globe"></i></a>
+                    {% endif %}
+                    {% if profile.scholar_userid %}
+                      <a href="https://scholar.google.com/citations?user={{ profile.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                    {% endif %}
+                    {% if profile.twitter %}
+                      <a href="https://twitter.com/{{ profile.twitter }}" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    {% endif %}
+                    {% if profile.linkedin %}
+                      <a href="https://www.linkedin.com/in/{{ profile.linkedin }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    {% endif %}
+                  </div>
                 </div>
               </div>
-            </div>
-          {% endfor %}
+            {% endfor %}
+            {% endif %}
         {% endif %}
       {% endfor %}
     {% endif %}
