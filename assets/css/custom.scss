@@ -159,3 +159,120 @@ a:focus {
   font-size: 1.1rem;
   text-decoration: none;
 }
+
+/* Container spacing */
+.research { display: grid; gap: 2rem; }
+
+/* Card */
+.research-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;  /* image : text = 1/3 : 2/3 */
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.25rem;
+  border-radius: 14px;
+  background: var(--global-bg, #fafbfc);
+  border: 1px solid #e3e6ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Image block */
+.research-figure { margin: 0; }
+.research-img {
+  width: 100%;
+  height: auto;           /* keep aspect ratio */
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;      /* looks good if the image is tall */
+}
+
+/* Text block */
+.research-title { margin: .25rem 0 .5rem; }
+.research-blurb { 
+  margin-bottom: 8px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Mobile: stack */
+@media (max-width: 768px) {
+  .research-item { grid-template-columns: 1fr; }
+}
+
+/* Optional: alternate left/right layout automatically */
+.research-item:nth-child(even) {
+  grid-template-columns: 2fr 1fr;
+}
+.research-item:nth-child(even) .research-figure { order: 2; }
+.research-item:nth-child(even) .research-content { order: 1; }
+
+/*Publications*/
+/* Publication card: efficient row layout */
+.bibliography > li,
+.pub-list > li {
+  /* keep your visual styles */
+  background: #fafbfc;
+  border: 1px solid #e3e6ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.08);
+  padding: 0.85rem 1rem;     /* a bit tighter */
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 77ch;           /* keep your readable line length */
+  transition: box-shadow .2s;
+
+  /* ⬇️ switch to flex row */
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+/* Fix the thumbnail column size */
+.bibliography > li .teaser,
+.bibliography > li .thumbnail,
+.pub-list > li .teaser,
+.pub-list > li .thumbnail {
+  flex: 0 0 160px;           /* fixed 160px column (tweak as you like) */
+  width: 1980px;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Make image fill its box */
+.bibliography > li .teaser img,
+.bibliography > li .thumbnail img,
+.pub-list > li .teaser img,
+.pub-list > li .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Everything that's NOT the thumbnail should take the remaining width */
+.bibliography > li > *:not(.teaser):not(.thumbnail),
+.pub-list > li > *:not(.teaser):not(.thumbnail) {
+  flex: 1 1 auto;
+  min-width: 0;              /* allows lines to actually grow instead of wrapping too early */
+}
+
+/* Optional polish */
+.bibliography .title,
+.pub-list .title { line-height: 1.35; margin: 0 0 .25rem; }
+.bibliography p,
+.pub-list p { margin: .2rem 0; line-height: 1.45; }
+
+/* Stack on small screens */
+@media (max-width: 768px) {
+  .bibliography > li,
+  .pub-list > li { flex-direction: column; }
+  .bibliography > li .teaser,
+  .bibliography > li .thumbnail,
+  .pub-list > li .teaser,
+  .pub-list > li .thumbnail {
+    width: 100%; height: auto; border-radius: 10px;
+  }
+}

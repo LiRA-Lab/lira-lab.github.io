@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="research">
+  {%- assign page_dir = page.image_dir | default: "/" -%}
+
+  {%- for item in page.research -%}
+    {%- assign rel = page_dir | append: item.image | replace: '//','/' -%}
+    {%- assign img_path = 'assets/img/' | append: rel | replace: '//','/' -%}
+    <h3 class="research-title">{{ item.title }}</h3>
+    <article class="research-item">
+      <figure class="research-figure">
+        <img
+          class="research-img"
+          src="{{ '/' | append: img_path | relative_url }}"
+          alt="{{ item.title | escape }}"
+          loading="lazy">
+      </figure>
+      <div class="research-content">
+        <p class="research-blurb">{{ item.blurb }}</p>
+      </div>
+    </article>
+  {%- endfor -%}
+</div>
