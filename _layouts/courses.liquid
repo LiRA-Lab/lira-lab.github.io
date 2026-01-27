@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="courses">
+
+  {%- for course in page.courses -%}
+
+    <!-- Course title -->
+    <h2 class="course-title">
+      {{ course.title }}
+    </h2>
+
+    <!-- Course-level description -->
+    {%- if course.blurb -%}
+      <p class="course-blurb">
+        {{ course.blurb }}
+      </p>
+    {%- endif -%}
+
+    <!-- Semesters -->
+    {%- for semester in course.semesters -%}
+      <article class="course-semester">
+
+        <h3 class="course-semester-title">
+          {{ semester.title }}
+        </h3>
+
+        <ul class="course-project-list">
+            {%- for project in semester.projects -%}
+                <li class="course-project">
+                    <div class="course-project-header">
+                        <span class="course-project-title">
+                        <strong>{{ project.title }}</strong>
+                        </span>
+
+                        {%- if project.students -%}
+                        <span class="course-project-students-inline">
+                            — {{ project.students | join: ", " }}
+                        </span>
+                        {%- endif -%}
+
+                        {%- if project.link -%}
+                        <span class="course-project-demo">
+                            [<a href="{{ project.link }}" target="_blank" rel="noopener">demo</a>]
+                        </span>
+                        {%- endif -%}
+                    </div>
+
+                    {%- if project.summary -%}
+                        <div class="course-project-summary">
+                        {{ project.summary }}
+                        </div>
+                    {%- endif -%}
+                </li>
+
+            {%- endfor -%}
+        </ul>
+
+      </article>
+    {%- endfor -%}
+
+  {%- endfor -%}
+
+</div>
