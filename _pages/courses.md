@@ -32,5 +32,5 @@ courses:
             students: "Ozan Oğuztüzün, Görkem Salman"
             link: "https://drive.google.com/file/d/1xlWTT1IEfe55Pd9wWuL2vJEPS5PtYz7z/view?usp=sharing"
             summary: >
-              This project focuses on retrieving a target object from densely cluttered environments using a perception-driven manipulation pipeline. A multi-camera RGB-D system constructs a unified 3D point cloud, which is segmented and analyzed to prioritize object removal based on stability and hierarchy, enabling efficient grasping and placement through motion optimization.
+              Retrieving a target object from densely cluttered environments using a perception-driven manipulation pipeline. A multi-camera RGB-D system constructs a unified 3D point cloud, which is segmented and analyzed to prioritize object removal based on stability and hierarchy, enabling efficient grasping and placement through motion optimization.
 ---
