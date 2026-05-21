@@ -32,7 +32,7 @@ profiles:
 
 - group: "PhD Students"
   align: left
-  image: logo.png
+  image: huzaifa_prof_pic.jpg
   name: "Huzaifa Salahuddin"
   bio: "Huzaifa, originally from Lahore, Pakistan, graduated from the College of Aeronautical Engineering at NUST with a degree in Avionics Engineering. Within robotics domain, he is deeply passionate about conducting research to apply machine learning techniques to enhance the integration between vision and language models. His goal by doing so, is to improve human-robot interaction for better cooperation in accomplishing various tasks."
   email: "huzaifa@bilkent.edu.tr"
@@ -47,16 +47,17 @@ profiles:
   align: left
   image: kutay_prof_pic.png
   name: "Kutay Demiray"
-  bio: "Kutay graduated from the Computer Engineering department at Bilkent University. His current research interests include reinforcement learning (particularly exploration and multi-agent RL in robotics and similar embodied agent settings), and machine learning and AI in general."
+  bio: "Kutay graduated from the Computer Engineering department at Bilkent University. His current research interests include reinforcement learning (particularly exploration and safe RL and control in robotics and similar embodied agent settings), and machine learning and AI in general."
   email: "kutay.demiray@bilkent.edu.tr"
   linkedin: "kutay-demiray-ba462518b"
 
 
 - group: "MSc Students"
   align: left
-  image: logo.png
+  image: hikmet_prof_pic.jpeg
   name: "M. Hikmet Simsir"
-  bio: ""
+  bio: "M. Hikmet Şimşir is an MSc student in the Department of Computer Engineering at Bilkent University. His research interests include reinforcement learning, generative policies, diffusion/flow-based models, and learning-based control for robotic manipulation."
+  linkedin: "hsimsir"
 
 - group: "MSc Students"
   align: left
@@ -85,6 +86,14 @@ profiles:
   linkedin: "mahyar-fardinfar1"
   scholar_userid: "6d226_oAAAAJ"
 
+- group: "MSc Students"
+  align: left
+  image: osama_prof_pic.jpeg
+  name: "Osama Awad "
+  bio: "Osama Awad is from Damascus, Syria, and graduated from Middle East Technical University (ODTÜ) with a degree in Electrical and Electronics Engineering and a minor in Mechatronics. His interests include control theory, robotics, and embedded systems. He has research and development experience in autonomous robotic systems. He also has previous research experience in signal conditioning and instrumentation systems."
+  email: "usamedoesrobotics@gmail.com"
+  linkedin: "osamasawad"
+ 
   
 
 - group: "Alumni"
