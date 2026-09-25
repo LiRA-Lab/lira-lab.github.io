@@ -1,0 +1,123 @@
+---
+layout: default
+---
+
+<div class="post images-page">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <article>
+    {% if page.featured_image %}
+      <div class="featured-image-wrapper">
+        <img
+          src="{{ page.featured_image.image | relative_url }}"
+          alt="{{ page.featured_image.caption }}"
+          class="featured-image gallery-clickable"
+          data-caption="{{ page.featured_image.caption }}"
+        >
+
+        {% if page.featured_image.caption %}
+          <p class="featured-caption">
+            {{ page.featured_image.caption }}
+          </p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="image-grid">
+      {% for item in page.gallery %}
+        <div class="image-card">
+          <img
+            src="{{ item.image | relative_url }}"
+            alt="{{ item.caption }}"
+            class="gallery-clickable"
+            data-caption="{{ item.caption }}"
+            loading="lazy"
+          >
+
+          {% if item.caption %}
+            <div class="image-caption">
+              {{ item.caption }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+</div>
+
+<div id="image-lightbox" class="image-lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+
+  <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+
+  <div class="lightbox-content">
+    <img id="lightbox-image" src="" alt="">
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const images = Array.from(document.querySelectorAll(".gallery-clickable"));
+  const lightbox = document.getElementById("image-lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+  const lightboxCaption = document.getElementById("lightbox-caption");
+
+  const closeButton = document.querySelector(".lightbox-close");
+  const previousButton = document.querySelector(".lightbox-prev");
+  const nextButton = document.querySelector(".lightbox-next");
+
+  let currentIndex = 0;
+
+  function showImage(index) {
+    currentIndex = index;
+
+    const image = images[currentIndex];
+
+    lightboxImage.src = image.src;
+    lightboxCaption.textContent = image.dataset.caption || "";
+
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  function showNext() {
+    showImage((currentIndex + 1) % images.length);
+  }
+
+  function showPrevious() {
+    showImage((currentIndex - 1 + images.length) % images.length);
+  }
+
+  images.forEach((image, index) => {
+    image.addEventListener("click", () => showImage(index));
+  });
+
+  closeButton.addEventListener("click", closeLightbox);
+  nextButton.addEventListener("click", showNext);
+  previousButton.addEventListener("click", showPrevious);
+
+  lightbox.addEventListener("click", function (event) {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (!lightbox.classList.contains("active")) return;
+
+    if (event.key === "Escape") closeLightbox();
+    if (event.key === "ArrowRight") showNext();
+    if (event.key === "ArrowLeft") showPrevious();
+  });
+});
+</script>
