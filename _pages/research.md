@@ -3,7 +3,7 @@ layout: research
 permalink: /research/
 title: Research
 description:
-nav: true
+nav: false
 nav_order: 3
 image_dir: /research_preview/
 
