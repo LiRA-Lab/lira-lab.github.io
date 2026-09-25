@@ -15,6 +15,20 @@ courses:
       captures the diversity of approaches explored.
 
     semesters:
+      - title: "Spring 2026"
+        projects: 
+        - title : "ToolMind: VLM-Guided Spatial Reasoning for Robotic Tool Use"
+          students: [Suleyman Talha Belen, Yunus Emre Kok, Yusuf Bugra Yazicioglu, Mehmet Emin Yaksi]
+          link: "https://stalhabelen.github.io/toolmind/"
+          summary: > 
+            ToolMind combines vision-language models with depth-based geometric reasoning and KOMO trajectory optimization to enable open-world robotic tool use. The system predicts task-relevant grasp, contact, and waypoint keypoints from RGB-D observations without task-specific VLM fine-tuning.
+
+        - title : "Learning to Play Jenga: Decision Making and KOMO Motion Planning for Block Extraction"
+          students: [Artun Balta,  Orhun Altay, Emre Can Yologlu]
+          link: "https://drive.google.com/file/d/1-Fx9bB9z26O463cmllxYZOMydi-ZcknN/view?usp=drive_link"
+          summary: >
+            Combining deep reinforcement learning with KOMO-based trajectory optimization for autonomous Jenga block extraction, where a learned policy selects stable blocks for removal and a multi-stage motion planner executes contact-rich pushing and collision-aware retraction with a Franka Emika Panda robot.
+
       - title: "Fall 2024"
         projects:
           - title: "Tower Builder Robot"
