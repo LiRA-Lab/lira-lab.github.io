@@ -1,6 +1,31 @@
 ---
 ---
 
+// Look of the content boxes (people, publications, courses, alumni):
+//   lines -> no boxes, thin line between items
+//   boxes -> clean white boxes with a thin border
+$card-style: lines;
+
+/*--------------------- Fonts ---------------------*/
+/* Source Sans 3 for text, Source Serif 4 for headings (loaded in _includes/head.liquid) */
+$font-text: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+$font-heading: "Source Serif 4", Georgia, serif;
+
+body {
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 1.05rem;
+}
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.profile-info h3,
+.alumni-name,
+.bibliography .title,
+.news-timeline .news-headline {
+  font-family: $font-heading;
+  font-weight: 600;
+}
+
 :root {
   --global-theme-color: #003366;      /* main blue */
   --global-theme-color-dark: #001F3F; /* hover/dark */
@@ -21,34 +46,97 @@ a:focus {
   color: var(--global-theme-color) !important;
 }
 
-.news, .news * {
-    color: #1a1a1a !important;   /* readable dark gray */
-  }
-/* links inside news */
-.news a,
-.news .post-title a {
-  color: #003366 !important;    /* dark blue */
-  text-decoration: none;
-}
-.news a:hover,
-.news .post-title a:hover {
-  color: #0056b3 !important;
-  text-decoration: underline;
-}
-
-/* date badge */
-.news .post-date {
-  color: #555 !important;
-  background: #f1f3f5 !important;  /* subtle gray badge */
-  border-radius: 4px;
-  padding: 2px 6px;
-}
-
-/* tidy spacing */
-.news .post-item { 
-  padding: 10px 0; 
-  border-bottom: 1px solid #eee;
+/*--------------------- News timeline ---------------------*/
+/* Markers are drawn like the robot-arm joints in the LiRA logo */
+.news-timeline {
+  --joint-color: #2b2e35;   /* logo charcoal */
+  --joint-fill: var(--global-bg-color);
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 34px;
   text-align: left;
+}
+.news-timeline::before {            /* the vertical line */
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #b9bfc8;
+}
+.news-timeline .news-item {
+  position: relative;
+  padding-bottom: 1.6rem;
+}
+.news-timeline .news-item:last-child {
+  padding-bottom: 0;
+}
+.news-timeline .news-item::before,  /* joint ring */
+.news-timeline .news-item::after {  /* joint center */
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.news-timeline .news-item::before {
+  left: -34px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  background: var(--joint-fill);
+  border: 3px solid var(--joint-color);
+}
+.news-timeline .news-item::after {
+  left: -28px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background: var(--joint-color);
+}
+.news-timeline .news-meta {
+  font-family: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #646b75;
+  margin-bottom: 0.2rem;
+}
+/* One color per kind of news: the joint marker and the label take it.
+   Items without a category stay logo charcoal. */
+.news-timeline .news-cat-paper   { --joint-color: #003366; } /* navy, same as links */
+.news-timeline .news-cat-preprint { --joint-color: #5b7a9d; } /* slate blue, lighter than paper */
+.news-timeline .news-cat-project { --joint-color: #2e7d5b; } /* green */
+.news-timeline .news-cat-event   { --joint-color: #c0622d; } /* burnt orange */
+.news-timeline .news-cat-award   { --joint-color: #b08900; } /* gold */
+.news-timeline .news-category {
+  color: var(--joint-color);
+  font-weight: 500;
+}
+.news-timeline .news-venue {
+  font-weight: 500;
+  color: var(--global-theme-color);
+  background: #e3e9f1;
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-left: 0.4rem;
+}
+.news-timeline .news-headline {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #1a1d23;
+  margin-bottom: 0.25rem;
+}
+.news-timeline .news-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #3a3f47;
+}
+.news-timeline a {
+  color: var(--global-theme-color);
 }
 
 /*--------------------- People ---------------------*/
@@ -64,15 +152,14 @@ a:focus {
   gap: 20px;
   padding: 16px;
   margin-bottom: 20px;
-  background-color: #fafbfc;
-  border: 1px solid #e3e6ea;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  transition: box-shadow 0.2s ease-in-out;
+  background-color: #fff;
+  border: 1px solid #e3e7ec;
+  border-radius: 6px;
+  transition: border-color 0.2s ease-in-out;
 }
 
 .profile-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-color: #c3ccd8;
 }
 
 .profile-card img {
@@ -80,7 +167,6 @@ a:focus {
   height: 110px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #e3e6ea;
 }
 
 .profile-info {
@@ -130,10 +216,9 @@ a:focus {
   width: 250px;
   text-align: center;
   padding: 12px;
-  border: 1px solid #eceff3;
-  border-radius: 10px;
-  background: #fafbfc;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e3e7ec;
+  border-radius: 6px;
+  background: #fff;
 }
 
 .alumni-card img {
@@ -212,16 +297,14 @@ a:focus {
 /* Publication card: efficient row layout */
 .bibliography > li,
 .pub-list > li {
-  /* keep your visual styles */
-  background: #fafbfc;
-  border: 1px solid #e3e6ea;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.08);
+  background: #fff;
+  border: 1px solid #e3e7ec;
+  border-radius: 6px;
   padding: 0.85rem 1rem;     /* a bit tighter */
   margin-bottom: 1rem;
   width: 100%;
   max-width: 77ch;           /* keep your readable line length */
-  transition: box-shadow .2s;
+  transition: border-color .2s;
 
   /* ⬇️ switch to flex row */
   display: flex;
@@ -290,11 +373,11 @@ a:focus {
 }
 
 .course-semester {
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
+  border: 1px solid #e3e7ec;
+  border-radius: 6px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 2rem;
-  background: #fafbfc;  /* light bluish-gray */
+  background: #fff;
 }
 .course-project-header {
   line-height: 1.4;
@@ -434,4 +517,134 @@ a:focus {
 .lightbox-prev:hover,
 .lightbox-next:hover {
   opacity: 0.7;
+}
+/*--------------------- Header, bands & footer colors ---------------------*/
+/* Light blue-gray from the same hue family as the logo charcoal and navy links */
+:root {
+  --lira-band-color: #f3f5f8;
+  --lira-line-color: #2b2e35; /* logo charcoal */
+  --global-footer-bg-color: var(--lira-band-color);
+  --global-footer-text-color: #666;
+  --global-footer-link-color: var(--global-theme-color);
+}
+
+/* Navbar: tinted background, no line underneath */
+.navbar {
+  background-color: var(--lira-band-color);
+  border-bottom: 0;
+  opacity: 1;
+}
+
+/* Small logo at the left of the navbar */
+.navbar .navbar-logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar .navbar-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Homepage: news section on a full-width gray band */
+.home-band {
+  background: var(--lira-band-color);
+  box-shadow: 0 0 0 100vmax var(--lira-band-color);
+  clip-path: inset(0 -100vmax);
+  margin: 2rem 0;
+  padding: 0.25rem 0 0.75rem;
+}
+.home-band .news-timeline {
+  --joint-fill: var(--lira-band-color);
+}
+.home-band-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 1.25rem 0 1.25rem;
+}
+.home-band-head h2 {
+  margin: 0;
+  font-weight: 500;
+  color: #2b2e35;
+}
+.home-band-head a {
+  font-size: 0.95rem;
+}
+
+/* Footer bar: same gray, thin line on top */
+footer.fixed-bottom {
+  border-top: 1px solid #e1e5eb;
+}
+
+/*--------------------- Box details ---------------------*/
+.bibliography > li:hover {
+  border-color: #c3ccd8;
+}
+/* Paper thumbnails: show the whole figure, thin frame, no shadow */
+.bibliography .preview img,
+.bibliography img.preview {
+  box-shadow: none !important;
+  border: 1px solid #e3e7ec;
+  border-radius: 4px !important;
+  background: #fff;
+  object-fit: contain;
+}
+.bibliography .title {
+  color: #1a1d23;
+}
+
+/* "lines" style: drop the boxes, keep a thin line between items */
+@if $card-style == lines {
+  .profile-card,
+  .alumni-card,
+  .research-item,
+  .bibliography > li,
+  .course-semester {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #e3e7ec;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .profile-card,
+  .bibliography > li {
+    margin-bottom: 0;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  /* last paper of each year: no line, the year divider below already draws one */
+  .bibliography > li:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* Contact page: details on the left, map on the right */
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+.contact-left h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.4rem;
+  color: #2b2e35;
+}
+.contact-left h3:not(:first-child) { margin-top: 1.6rem; }
+.contact-left p { margin: 0; line-height: 1.6; }
+.contact-left strong { font-weight: 600; }
+.map-embed iframe {
+  display: block;
+  width: 100%;
+  height: 380px;
+  border: 1px solid #e3e7ec;
+  border-radius: 6px;
+}
+.map-note { margin-top: 0.6rem; font-size: 0.95rem; }
+@media (max-width: 768px) {
+  .contact-wrap { grid-template-columns: 1fr; gap: 1.5rem; }
+  .map-embed iframe { height: 300px; }
 }
