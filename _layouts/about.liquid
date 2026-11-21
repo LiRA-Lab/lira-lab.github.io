@@ -22,17 +22,21 @@ layout: default
 
   <!-- News -->
   {% if page.news and site.announcements.enabled %}
-    <h2>
-      <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-    </h2>
-    {% include news.liquid limit=true %}
+    <div class="home-band">
+      <div class="home-band-head">
+        <h2>News</h2>
+        <a href="{{ '/news/' | relative_url }}">All news &rarr;</a>
+      </div>
+      {% include news.liquid limit=true %}
+    </div>
   {% endif %}
 
   <!-- Selected papers -->
   {% if page.selected_papers %}
-    <h2>
-      <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-    </h2>
+    <div class="home-band-head">
+      <h2>Selected Publications</h2>
+      <a href="{{ '/publications/' | relative_url }}">All publications &rarr;</a>
+    </div>
     {% include selected_papers.liquid %}
   {% endif %}
 

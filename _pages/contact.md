@@ -3,7 +3,7 @@ layout: page
 title: Contact
 permalink: /contact/
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 <div class="contact-wrap">
   <div class="contact-left">
@@ -33,16 +33,16 @@ nav_order: 6
 
 
   <div class="contact-right">
-    <!-- Replace the src below later with your exact embed from Google Maps (Share → Embed a map) -->
+    <!-- Map pinned on the EA building (Faculty of Engineering), Bilkent -->
     <div class="map-embed">
       <iframe
-        src="https://www.google.com/maps?q=Bilkent%20University%20Computer%20Engineering&output=embed"
+        title="Map: EA Building, Bilkent University"
+        src="https://www.google.com/maps?q=39.8711166,32.7499445&z=16&output=embed"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
-
     <p class="map-note">
-      Tip: Click the map to open directions to the Department of Computer Engineering at Bilkent.
+      <a href="https://www.google.com/maps/dir/?api=1&destination=39.8711166,32.7499445" target="_blank" rel="noopener">Directions to the EA Building &rarr;</a>
     </p>
   </div>
 </div>

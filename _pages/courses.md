@@ -5,14 +5,13 @@ title: Courses
 
 description:
 nav: true
-nav_order: 5
+nav_order: 6
 
 courses:
   - title: "CS449/599 — Learning for Robotics"
     blurb: >
       Each semester, students put together a final project using the tools introduced
-      in this course. The examples shown below represent a small, curated sample that
-      captures the diversity of approaches explored.
+      in this course. Below are some of these projects.
 
     semesters:
       - title: "Spring 2026"
